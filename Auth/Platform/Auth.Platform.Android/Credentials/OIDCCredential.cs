@@ -2,7 +2,7 @@
 using AeroGear.Mobile.Auth.Credentials;
 using OpenId.AppAuth;
 
-namespace Auth.Platform.Credentials
+namespace AeroGear.Mobile.Auth.Credentials
 {
     /// <summary>
     /// Credential for OpenID Connect. This contains the access, identity and

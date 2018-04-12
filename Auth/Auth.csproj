@@ -10,4 +10,53 @@
   <ItemGroup>
     <Folder Include="Credentials\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredential.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredentialManager.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Properties\AssemblyInfo.cs" />
+    <Compile Remove="Platform\Auth.Platform.Shared\MyClass.cs" />
+    <Compile Remove="Platform\Auth.Platform.iOS\Properties\AssemblyInfo.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredentialManager.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredentialManager.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredential.cs" />
+    <Compile Remove="Platform\Auth.Platform.Android\Credentials\OIDCCredentialManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Platform\Auth.Platform.Android\packages.config" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\designtime\libraryimports.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\designtime\libraryprojectimports.cache" />
+    <None Remove="Platform\Auth.Platform.NuGet\Auth.Platform.NuGet.nuget.props" />
+    <None Remove="Platform\Auth.Platform.NuGet\Auth.Platform.NuGet.nuget.targets" />
+    <None Remove="Platform\Auth.Platform.Shared\Auth.Platform.Shared.projitems" />
+    <None Remove="Platform\Auth.Platform.iOS\packages.config" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\build.props" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.Android.csprojResolveAssemblyReference.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\0.stamp" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\1.stamp" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\2\jl\AndroidManifest.xml" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\2\jl\bin\AndroidManifest.xml" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\2\jl\bin\classes.jar" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\2.stamp" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\3.stamp" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\4.stamp" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\libraryprojectimports.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\map.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\libraryimports.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\lp\2\jl\manifest\AndroidManifest.xml" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Component.R.cs.flag" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.Android.csproj.CoreCompileInputs.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.dll" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.pdb" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\AeroGear.Mobile.Core.dll" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\Auth.dll" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\OpenId.AppAuth.Android.dll" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\Auth.pdb" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\AeroGear.Mobile.Core.pdb" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.Android.csproj.CopyComplete" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\Auth.Platform.dll" />
+    <None Remove="Platform\Auth.Platform.Android\bin\Debug\Auth.Platform.pdb" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\Auth.Platform.Android.csproj.FileListAbsolute.txt" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\devices.cache" />
+    <None Remove="Platform\Auth.Platform.Android\obj\Debug\resourcepaths.cache" />
+  </ItemGroup>
 </Project>

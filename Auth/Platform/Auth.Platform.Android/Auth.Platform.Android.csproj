@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Auth.csproj">
-      <Project>{930A5089-906B-4FA6-85C5-80BF116D24B4}</Project>
+      <Project>{81D85BD7-7761-48B6-8516-2C7763C096A2}</Project>
       <Name>Auth</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\..\Core\Core.csproj">

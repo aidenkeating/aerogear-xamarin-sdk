@@ -2,10 +2,9 @@
 using AeroGear.Mobile.Auth.Credentials;
 using Android.App;
 using Android.Content;
-using Android.Preferences;
 using Java.Lang;
 
-namespace Auth.Platform.Credentials
+namespace AeroGear.Mobile.Auth.Credentials
 {
     /// <summary>
     /// Class for peristing, retrieving, updating and removing OpenID Connect
@@ -36,7 +35,7 @@ namespace Auth.Platform.Credentials
 
         private OIDCCredentialManager(Context context)
         {
-            SharedPreferences = PreferenceManager.GetDefaultSharedPreferences(context.ApplicationContext);
+            SharedPreferences = context.GetSharedPreferences(StoreName, FileCreationMode.Private);
         }
 
         public ICredential Read(string key)
@@ -58,7 +57,7 @@ namespace Auth.Platform.Credentials
 
         public void Save(string key, ICredential credential)
         {
-            if (key == null) {
+            if (credential == null) {
                 Remove(key);
                 return;
             }
