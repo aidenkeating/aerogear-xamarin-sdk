@@ -1,12 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-
-using Foundation;
-using UIKit;
-using FFImageLoading;
+using AeroGear.Mobile.Auth;
+using AeroGear.Mobile.Auth.Config;
+using AeroGear.Mobile.Core;
+using AeroGear.Mobile.Core.Configuration;
 using FFImageLoading.Forms.Touch;
+using Foundation;
 using ImageCircle.Forms.Plugin.iOS;
+using UIKit;
+using Xamarin.Forms;
+using static AeroGear.Mobile.Core.Configuration.ServiceConfiguration;
 
 namespace Example.iOS
 {
@@ -26,7 +28,14 @@ namespace Example.iOS
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
             global::Xamarin.Forms.Forms.Init();
-            LoadApplication(new App());
+            var xamApp = new App();
+
+
+            MobileCore core = MobileCoreIOS.Init(xamApp.GetType().Assembly);
+            IAuthService service = core.GetInstance<IAuthService>();
+            var authConfig = AuthenticationConfig.Builder.RedirectUri("org.aerogear.mobile.example:/callback").Build();
+            service.Configure(authConfig);
+            LoadApplication(xamApp);
             CachedImageRenderer.Init();
             ImageCircleRenderer.Init();
             return base.FinishedLaunching(app, options);
