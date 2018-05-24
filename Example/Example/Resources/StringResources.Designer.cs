@@ -71,6 +71,12 @@ namespace Example.Resources {
             }
         }
         
+        public static string NavSecurity {
+            get {
+                return ResourceManager.GetString("NavSecurity", resourceCulture);
+            }
+        }
+        
         public static string Home {
             get {
                 return ResourceManager.GetString("Home", resourceCulture);

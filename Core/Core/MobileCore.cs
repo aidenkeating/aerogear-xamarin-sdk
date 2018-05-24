@@ -221,10 +221,11 @@ namespace AeroGear.Mobile.Core
             if (conf == null)
             {
                 ServiceConfiguration[] confs = GetServiceConfigurationByType(serviceModule.Type);
-                if (confs != null)
+                if (confs != null && confs.Length > 0)
                 {
-                    result = confs[0];
+                    return confs[0];
                 }
+                return null;
             }
 
             return result;

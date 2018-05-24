@@ -18,6 +18,8 @@
   <ItemGroup>
     <Compile Remove="Views\Pages\AuthPage.cs" />
     <Compile Remove="Views\Pages\HomePage.xaml %28copy%29.cs" />
+    <Compile Remove="Views\Pages\MyPage.xaml.cs" />
+    <Compile Remove="Views\Converters\SecurityCheckToSecurityCheckReportConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Update="Views\RootPageMenuItem.cs">
@@ -88,6 +90,9 @@
   <ItemGroup>
     <Folder Include="Utils\" />
     <Folder Include="Auth\" />
+    <Folder Include="Security\" />
+    <Folder Include="Converters\" />
+    <Folder Include="ViewModels\Security\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\ic_auth.svg" />
@@ -104,5 +109,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Core\Core\Core.csproj" />
     <ProjectReference Include="..\..\Auth\Auth\Auth.csproj" />
+    <ProjectReference Include="..\..\Security\Security.csproj" />
   </ItemGroup>
 </Project>

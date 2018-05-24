@@ -6,17 +6,17 @@ namespace AeroGear.Mobile.Security
         /// <summary>
         /// The identifier of the check that produced this result.
         /// </summary>
-        public readonly string Id;
+        public string Id { get; }
 
         /// <summary>
         /// The human readable name of the check that produced this result.
         /// </summary>
-        public readonly string Name;
+        public string Name { get; }
 
         /// <summary>
         /// Whether the check has passed or not.
         /// </summary>
-        public readonly bool Passed;
+        public bool Passed { get; }
 
         public SecurityCheckResult(ISecurityCheck check, bool passed)
         {
